@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,28 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Remix Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: "Manrope", serif;
         }
     </style>
 </head>
+
 <body class="font-manrope">
     <!-- Header -->
-    <section class="w-5/6 mx-auto">
+    <section class="md:w-5/6 mx-auto p-6">
         <header>
-            <nav class="flex justify-between items-center p-4">
-                    <h1 class="text-2xl font-extrabold bg-gradient-to-r from-pink-500  to-violet-500 inline-block text-transparent bg-clip-text">Tea House</h1>
+            <nav class="flex justify-between items-center md:p-4">
+                <h1
+                    class="text-xl md:text-2xl font-extrabold bg-gradient-to-r from-pink-500  to-violet-500 inline-block text-transparent bg-clip-text">
+                    Tea House</h1>
                 <div class="hidden md:inline-block">
                     <ul class="flex items-center justify-between gap-8 text-base text-gray-600 font-semibold">
                         <li><a class="hover:border-b-1 border-gray-200" href="">Home</a></li>
@@ -33,10 +41,36 @@
                     </ul>
                 </div>
                 <div>
-                    <img class="w-6 md:w-10" src="/images/cup.png" alt="">
+                    <img class="w-5 md:w-8" src="/images/cup.png" alt="">
                 </div>
             </nav>
+            <!-- Hero Section -->
+            <section class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 my-10 py-6">
+                <div class="mx-auto md:p-4">
+                    <h1 class="text-3xl md:text-5xl lg:text-7xl font-semibold text-[#1C1C1C] mb-6">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="text-base text-[#777777] font-semibold mb-6 w-3/4 md:w-5/6">Tea and Botanical Solutions
+                        Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    <button
+                        class="bg-gradient-to-r from-pink-500  to-violet-500 text-base text-white font-semibold px-6 py-3 rounded-full cursor-pointer drop-shadow-xl">Explore
+                        More <span><i class="ri-arrow-right-up-line"></i></span></button>
+                </div>
+                <div class="p-2 md:p-4">
+                    <img src="/images/banner.png" alt="">
+                    <div>
+                        <div
+                            class="flex items-center justify-between w-42 px-4 py-4 bg-slate-50 drop-shadow-sm rounded-lg relative bottom-12 left-20 md:bottom-20 md:left-36">
+                            <span><i class="ri-star-fill text-yellow-500 text-xl md:text-2xl w-2/4"></i></span>
+                            <div>
+                                <h2 class="text-lg font-bold">5.00</h2>
+                                <p class="text-xs text-gray-500 font-semibold">Trust Pilot Ratings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </header>
     </section>
 </body>
+
 </html>
